@@ -1,2 +1,2 @@
-# IDM222-sej84
+# IDM222 Final Project
  
