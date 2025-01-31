@@ -64,6 +64,7 @@ h1.hero {
   line-height: 2.5rem;
   margin: 0;
   text-align: left;
+  max-width: 350px;
 }
 
 h2 {
@@ -294,10 +295,10 @@ a.contact-nav {
   background-color: var(--foreground-color);
   box-shadow: 0px 10px 20px #00000055;
   color: var(--background-color);
-  height: 50vh;
+  height:24rem;
   display: flex;
   align-items: flex-end;
-  padding: 0 var(--rhythm) var(--rhythm);
+  padding: 0 var(--rhythm) calc(1.5*var(--rhythm));
   margin-bottom: var(--rhythm);
 }
 
@@ -342,7 +343,8 @@ a.button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   text-align: center;
-  width: 100%;
+  /* max-width: 100%; */
+  min-width: 100%;
   margin: 1rem 2rem 0 0;
 }
 /* End Anchor Styles */
@@ -350,6 +352,8 @@ a.button {
 /* Media Styles */
 img {
   margin-bottom: var(--rhythm);
+  width: 100%;
+  height: auto;
 }
 
 img.round { 
@@ -477,4 +481,57 @@ footer > span.divider { /* Divider */
 /* End Div Styles */
 
 /* Media Queries */
+@media screen and (min-width: 400px) {
+  .case-study {
+    padding: 3rem 5rem;
+  }
+ }
 
+ @media screen and (min-width: 600px) {
+  .case-study {
+    padding: 3rem 6rem;
+  }
+ }
+ 
+ @media screen and (min-width: 780px) { /* Content Side-by-Side */
+  .case-study {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0 calc(1.5*var(--rhythm));
+    margin: auto;
+    max-width: 900px;
+    padding: var(--rhythm) 5rem 0;
+    
+
+    img {
+      margin: 0;
+      width: 400px;
+    }
+  }
+
+  .hero-wrapper {
+    align-items: center;
+    justify-items: center;
+    padding-top: calc(6*var(--rhythm));
+    
+   
+
+    h1 {
+      font-size: 3rem;
+      line-height: 3.25rem;
+      max-width: 450px;
+    }
+    
+  }
+
+  a.case-study-image {
+    max-width: 400px;
+    width: 80%;
+  }
+
+  a.case-study-info {
+    max-width: 20%;
+  }
+}
+ 
