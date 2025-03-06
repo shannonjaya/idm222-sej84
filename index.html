@@ -8,6 +8,7 @@
     rel="stylesheet" 
     href="styles/screen.css" 
     media="screen">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
   <header>
@@ -65,57 +66,59 @@
           </a>  
         </nav>
   </header>
+  <div class="hero-wrapper">
+    <h1 class="hero">Building <mark>intuitive</mark> digital experiences.</h1>
+  </div>
    <main>
-    <div class="hero-wrapper">
-      <h1 class="hero">Building <mark>intuitive</mark> digital experiences.</h1>
-    </div>
-    <div class="case-study">
-    <a class="case-study-image" href="inkwell.html">
-          <img class="round" alt="inkwell-home" src="media/inkwell.avif" width="313">
-    </a>
-    <div class="case-study-info">
-       <a href="inkwell.html">
-            <h1>Inkwell</h1>
-            <h2>WHERE STORIES FLOW IN INK</h2>
-            <p>An app that makes logging your favorite books and connected with fellow readers easier than ever.</p>  
-      </a>
-    <a class="button" href="inkwell.html">
-        <h2>CHECK IT OUT</h2>
-    </a>
-    </div>
-    </div>
-    <span class="divider"></span>
-    <div class="case-study">
-      <a class="case-study-image" href="balisuntours.html">
-            <img class="round" alt="balisuntours-home" src="media/balisuntours.avif" width="313">
+    <div class="case-studies-wrapper">
+      <div class="case-study">
+      <a class="case-study-image" href="inkwell.html">
+            <img class="round" alt="inkwell-home" src="media/inkwell.avif" width="313">
       </a>
       <div class="case-study-info">
-        <a href="balisuntours.html">
-          <h1>Bali Sun Tours</h1>
-          <h2>YOUR SUNLIT ADVENTURE BEGINS HERE</h2>
-          <p>Newly improved navigation, information architecture, and visuals for you to plan your next island getaway.</p>
+         <a href="inkwell.html">
+              <h1>Inkwell</h1>
+              <h2>WHERE STORIES FLOW IN INK</h2>
+              <p>An app that makes logging your favorite books and connected with fellow readers easier than ever.</p>
         </a>
-        <a class="button" href="balisuntours.html">
-              <h2>CHECK IT OUT</h2>
-          </a>
+      <a class="button" href="inkwell.html">
+          <button><h2>CHECK IT OUT</h2></button>
+      </a>
       </div>
       </div>
-    <span class="divider"></span>
-        <div class="case-study">
-          <a class="case-study-image" href="amazonwireframes.html">
-              <img class="round" alt="amazonwireframes-home" src="media/amazonwireframes.avif" width="313">
+      <span class="divider"></span>
+      <div class="case-study">
+        <a class="case-study-image" href="balisuntours.html">
+              <img class="round" alt="balisuntours-home" src="media/balisuntours.avif" width="313">
+        </a>
+        <div class="case-study-info">
+          <a href="balisuntours.html">
+            <h1>Bali Sun Tours</h1>
+            <h2>YOUR SUNLIT ADVENTURE BEGINS HERE</h2>
+            <p>Newly improved navigation, information architecture, and visuals for you to plan your next island getaway.</p>
           </a>
-          <div class="case-study-info">
-            <a href="amazonwireframes.html">
-              <h1>Amazon Wireframes</h1>
-            <h2>ENDING SHOPPING CART ABANDONMENT</h2>
-            <p>Understanding user behavior and prototyping new features to boost consumer engagement.</p>
+          <a class="button" href="balisuntours.html">
+                <button><h2>CHECK IT OUT</h2></button>
             </a>
-            <a class="button" href="amazonwireframes.html">
-                <h2>CHECK IT OUT</h2>
+        </div>
+        </div>
+      <span class="divider"></span>
+          <div class="case-study">
+            <a class="case-study-image" href="amazonwireframes.html">
+                <img class="round" alt="amazonwireframes-home" src="media/amazonwireframes.avif" width="313">
             </a>
-          </div> 
-        </div>      
+            <div class="case-study-info">
+              <a href="amazonwireframes.html">
+                <h1>Amazon Wireframes</h1>
+              <h2>ENDING SHOPPING CART ABANDONMENT</h2>
+              <p>Understanding user behavior and prototyping new features to boost consumer engagement.</p>
+              </a>
+              <a class="button" href="amazonwireframes.html">
+                  <button><h2>CHECK IT OUT</h2></button>
+              </a>
+            </div>
+          </div>
+    </div>
    </main>
    <footer>
     <div class="brand-container">
@@ -142,18 +145,20 @@
       </div>  
     </div>
     <span class="divider"></span>
-    <a class="contact" href="http://www.linkedin.com/in/shannonjaya" target="win_linkedin">
-        <svg class= "white" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 50 40">
-            <path d="M31.6667 5C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V8.33333C5 7.44928 5.35119 6.60143 5.97631 5.97631C6.60143 5.35119 7.44928 5 8.33333 5H31.6667ZM30.8333 30.8333V22C30.8333 20.559 30.2609 19.177 29.2419 18.1581C28.223 17.1391 26.841 16.5667 25.4 16.5667C23.9833 16.5667 22.3333 17.4333 21.5333 18.7333V16.8833H16.8833V30.8333H21.5333V22.6167C21.5333 21.3333 22.5667 20.2833 23.85 20.2833C24.4688 20.2833 25.0623 20.5292 25.4999 20.9668C25.9375 21.4043 26.1833 21.9978 26.1833 22.6167V30.8333H30.8333ZM11.4667 14.2667C12.2093 14.2667 12.9215 13.9717 13.4466 13.4466C13.9717 12.9215 14.2667 12.2093 14.2667 11.4667C14.2667 9.91667 13.0167 8.65 11.4667 8.65C10.7196 8.65 10.0032 8.94675 9.47498 9.47498C8.94675 10.0032 8.65 10.7196 8.65 11.4667C8.65 13.0167 9.91667 14.2667 11.4667 14.2667ZM13.7833 30.8333V16.8833H9.16667V30.8333H13.7833Z"/>
-          </svg>
-        <p>www.linkedin.com/in/shannonjaya</p>
-    </a>
-    <a class="contact" href="mailto:shannonjaya5@gmail.com">
-      <svg class="white" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 50 40">
-          <path d="M33.333 6.66675H6.66634C5.78229 6.66675 4.93444 7.01794 4.30932 7.64306C3.6842 8.26818 3.33301 9.11603 3.33301 10.0001V30.0001C3.33301 30.8841 3.6842 31.732 4.30932 32.3571C4.93444 32.9822 5.78229 33.3334 6.66634 33.3334H33.333C34.2171 33.3334 35.0649 32.9822 35.69 32.3571C36.3152 31.732 36.6663 30.8841 36.6663 30.0001V10.0001C36.6663 9.11603 36.3152 8.26818 35.69 7.64306C35.0649 7.01794 34.2171 6.66675 33.333 6.66675ZM33.333 13.7267L19.9997 21.8634L6.66634 13.7267V10.0001H33.333V13.7267Z" fill="#F8F5F3"/>
-      </svg>
-      <p>shannonjaya5@gmail.com</p>
-    </a>
+    <div class="footer-links">
+      <a class="contact" href="http://www.linkedin.com/in/shannonjaya" target="win_linkedin">
+          <svg class= "white" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 50 40">
+              <path d="M31.6667 5C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V8.33333C5 7.44928 5.35119 6.60143 5.97631 5.97631C6.60143 5.35119 7.44928 5 8.33333 5H31.6667ZM30.8333 30.8333V22C30.8333 20.559 30.2609 19.177 29.2419 18.1581C28.223 17.1391 26.841 16.5667 25.4 16.5667C23.9833 16.5667 22.3333 17.4333 21.5333 18.7333V16.8833H16.8833V30.8333H21.5333V22.6167C21.5333 21.3333 22.5667 20.2833 23.85 20.2833C24.4688 20.2833 25.0623 20.5292 25.4999 20.9668C25.9375 21.4043 26.1833 21.9978 26.1833 22.6167V30.8333H30.8333ZM11.4667 14.2667C12.2093 14.2667 12.9215 13.9717 13.4466 13.4466C13.9717 12.9215 14.2667 12.2093 14.2667 11.4667C14.2667 9.91667 13.0167 8.65 11.4667 8.65C10.7196 8.65 10.0032 8.94675 9.47498 9.47498C8.94675 10.0032 8.65 10.7196 8.65 11.4667C8.65 13.0167 9.91667 14.2667 11.4667 14.2667ZM13.7833 30.8333V16.8833H9.16667V30.8333H13.7833Z"/>
+            </svg>
+          <p>www.linkedin.com/in/shannonjaya</p>
+      </a>
+      <a class="contact" href="mailto:shannonjaya5@gmail.com">
+        <svg class="white" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 50 40">
+            <path d="M33.333 6.66675H6.66634C5.78229 6.66675 4.93444 7.01794 4.30932 7.64306C3.6842 8.26818 3.33301 9.11603 3.33301 10.0001V30.0001C3.33301 30.8841 3.6842 31.732 4.30932 32.3571C4.93444 32.9822 5.78229 33.3334 6.66634 33.3334H33.333C34.2171 33.3334 35.0649 32.9822 35.69 32.3571C36.3152 31.732 36.6663 30.8841 36.6663 30.0001V10.0001C36.6663 9.11603 36.3152 8.26818 35.69 7.64306C35.0649 7.01794 34.2171 6.66675 33.333 6.66675ZM33.333 13.7267L19.9997 21.8634L6.66634 13.7267V10.0001H33.333V13.7267Z" fill="#F8F5F3"/>
+        </svg>
+        <p>shannonjaya5@gmail.com</p>
+      </a>
+    </div>
    </footer>
 </body>
 </html>
