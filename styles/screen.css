@@ -94,7 +94,7 @@ section h2 {
   margin-top: var(--rhythm);
 }
 
-a.button > button > h2 {
+a.button > h2 {
   color: var(--background-color);
   margin: 0;
 }
@@ -146,7 +146,8 @@ p.sub {
 }
 
 .details p {
-  background-color: var(--color-overlay-dark);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   padding: calc(var(--rhythm)/3);
   border-radius: 5px;
   margin-right: calc(var(--rhythm)/2);
@@ -193,6 +194,11 @@ header {
 
 .logo {
   padding-right: 0.5rem;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 svg.white {
@@ -275,6 +281,7 @@ ul.nav li a {
   padding-block: 1rem;
   padding-inline: 1rem;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
 ul li a:hover {
@@ -366,7 +373,7 @@ a.contact {
   margin-top: -1rem;
 }
 
-a.button > button {
+a.button {
   background-color: var(--color-accent);
   border: none;
   border-radius: 100px;
@@ -375,6 +382,11 @@ a.button > button {
   text-align: center;
   min-width: 100%;
   margin: 1rem 2rem 0 0;
+  transition: ease 0.5s;
+}
+
+a.button:hover {
+  transform: scale(1.05);
 }
 /* End Anchor Styles */
 
@@ -403,6 +415,11 @@ img.round {
 
 .case-study-image {
   width: 100%;
+  transition: 0.5s ease;
+}
+
+.case-study-image:hover {
+  transform: scale(1.1);
 }
 
 .header-image {
@@ -515,10 +532,9 @@ section.bottom, section.overview-about { /* Targets last section on page */
 }
 
 div.inkwell-project-image{
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: end;
 }
 
@@ -770,6 +786,11 @@ footer > span.divider { /* Divider */
     height: auto;
   }
 
+  img.small {
+    max-width: 30%;
+  }
+
+
   .img-container-goodreads {
     max-width: 60%;
     display: flex;
@@ -781,7 +802,6 @@ footer > span.divider { /* Divider */
     flex-direction: row;
     align-items: center;
   }
-
 
   .case-studies-wrapper {
     padding: calc(2*var(--rhythm)) calc(12*var(--rhythm));
@@ -796,6 +816,10 @@ footer > span.divider { /* Divider */
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  section.creative .video a {
+    flex: 1 1 30%;
   }
 
   section {
@@ -830,12 +854,16 @@ footer > span.divider { /* Divider */
     display: flex;
     flex-direction: row-reverse;
     gap: calc(2*var(--rhythm));
-    align-items: center;
+    align-items: end;
     box-shadow: 0px -10px 20px #00000014 inset;
     padding: calc(2*var(--rhythm)) calc(4*var(--rhythm)) 0;
-    height: 704px;
+    height: 100%;
     margin-top: calc(4*var(--rhythm));
-    }
+  }
+
+  .top-content-about {
+    align-items: center;
+  }
 
   .top-content-about .page-heading {
     margin-top: 0;
@@ -856,7 +884,7 @@ footer > span.divider { /* Divider */
     margin-bottom: -1rem;
   }
 
-  .top-content-about .text-container {
+  .top-content .text-container {
     margin-bottom: -2rem;
   } 
  
@@ -865,13 +893,11 @@ footer > span.divider { /* Divider */
     box-shadow: none;
     color: var(--foreground-color);
     height: 100%;
-    padding: var(--rhythm) var(--rhythm) calc((5*var(--rhythm)));
+    padding: var(--rhythm) var(--rhythm) calc((3*var(--rhythm)));
     max-width: 50%;
   }
   
   .details p {
-    background-color: var(--foreground-color);
-    color: var(--background-color);
     padding: calc(var(--rhythm)/3);
     border-radius: 5px;
     margin-right: calc(var(--rhythm)/2);
@@ -882,10 +908,6 @@ footer > span.divider { /* Divider */
   .details p.highlighted { /* For details section */
     background-color: var(--color-accent);
     color: var(--background-color);
-  }
-  
-  .details .text-container:last-child {
-  margin-bottom: 4rem;
   }
 
   section.resume {
@@ -908,6 +930,50 @@ footer > span.divider { /* Divider */
 
   .top-content-about {
     box-shadow: none;
+  }
+
+  /* Responsive Nav */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: calc(2*var(--rhythm));
+  }
+  nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  ul.nav {
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-end;
+    gap: calc(var(--rhythm));
+  }
+
+
+  ul.nav li a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  label {
+    display: none; /* Hide hamburger menu */
+  }
+
+  nav span.divider, nav a.contact-nav {
+    display: none;
+  }
+
+  ul li a:hover {
+    background-color: transparent;
+    color: var(--background-color);
+    transform: scale(1.2);
   }
 }
 
